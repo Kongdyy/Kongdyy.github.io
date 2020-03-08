@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>String小练习 | Hexo</title>
   <meta name="author" content="John Doe">
+  
+  <meta name="description" content="String 小练习12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="String小练习"/>
   <meta property="og:site_name" content="Hexo"/>
 
   
@@ -43,8 +45,7 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article id="post-String小练习" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-String小练习" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
     <header>
@@ -54,7 +55,7 @@
       
       
   
-    <h1 class="title"><a href="/2020/03/07/String小练习/">String小练习</a></h1>
+    <h1 class="p-name title" itemprop="headline name">String小练习</h1>
   
 
     </header>
@@ -71,6 +72,24 @@
       
         
         
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
       
       <div class="clearfix"></div>
     </footer>
@@ -78,96 +97,27 @@
 </article>
 
 
+<section id="comment">
+  <h1 class="title">Comments</h1>
 
-
-  <article id="post-罗马数字转整数" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2020-02-21T13:40:14.199Z"><a href="/2020/02/21/罗马数字转整数/">2020-02-21</a></time>
-      
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://yoursite.com/2020/03/07/String%E5%B0%8F%E7%BB%83%E4%B9%A0/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
       
   
-    <h1 class="title"><a href="/2020/02/21/罗马数字转整数/">罗马数字转整数</a></h1>
-  
+</section>
 
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <h1 id="罗马数字转整数"><a href="#罗马数字转整数" class="headerlink" title="罗马数字转整数"></a>罗马数字转整数</h1><h2 id="题目"><a href="#题目" class="headerlink" title="题目:"></a>题目:</h2><p>罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。</p>
-<table>
-<thead>
-<tr>
-<th align="center">字符</th>
-<th align="center">数值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">I</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">V</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">X</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="center">L</td>
-<td align="center">50</td>
-</tr>
-<tr>
-<td align="center">C</td>
-<td align="center">100</td>
-</tr>
-<tr>
-<td align="center">D</td>
-<td align="center">500</td>
-</tr>
-<tr>
-<td align="center">M</td>
-<td align="center">1000</td>
-</tr>
-</tbody></table>
-<p>例如， 罗马数字 2 写做 II ，即为两个并列的 1。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。</p>
-<p>通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：</p>
-<p>I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。<br>X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。<br>C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。<br>给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。</p>
-<p>示例 1:<br>输入: “III”<br>输出: 3  </p>
-<p>示例 2:<br>输入: “IV”<br>输出: 4  </p>
-<p>示例 3:<br>输入: “IX”<br>输出: 9  </p>
-<p>示例 4:<br>输入: “LVIII”<br>输出: 58<br>解释: L = 50, V= 5, III = 3.  </p>
-<p>示例 5:<br>输入: “MCMXCIV”<br>输出: 1994<br>解释: M = 1000, CM = 900, XC = 90, IV = 4.  </p>
-<hr>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码:"></a>代码:</h2><h4 id="方法一"><a href="#方法一" class="headerlink" title="方法一:"></a>方法一:</h4><p>首先使用charAt(int index)这个方法进行拆分<br>获取索引的字符后按每个字符对应的值进行自加操作<br>并且对当前字符和它的前一位字符进行判断<br>如果满足减法的条件，就减去两倍的减数<br>比如 IV = 4<br>在程序里执行的操作先是1+5=6<br>进行判断后发现满足条件<br>从而6-(2<code>*</code>1)=4<br>所以整个过程是1+5-(2<code>*</code>1)=4</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">romanToInt</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> romanInt = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> n = s.length();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">			<span class="keyword">switch</span> (s.charAt(i)) &#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'I'</span>:</span><br><span class="line">				romanInt += <span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'V'</span>:</span><br><span class="line">				romanInt += <span class="number">5</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'X'</span>:</span><br><span class="line">				romanInt += <span class="number">10</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'L'</span>:</span><br><span class="line">				romanInt += <span class="number">50</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'C'</span>:</span><br><span class="line">				romanInt += <span class="number">100</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'D'</span>:</span><br><span class="line">				romanInt += <span class="number">500</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'M'</span>:</span><br><span class="line">				romanInt += <span class="number">1000</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">default</span>:</span><br><span class="line">				System.out.print(<span class="string">"非法输入"</span>);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (i != <span class="number">0</span>) &#123;</span><br><span class="line">				<span class="keyword">if</span> (((s.charAt(i) == <span class="string">'V'</span>) || (s.charAt(i) == <span class="string">'X'</span>)) &amp;&amp; (s.charAt(i - <span class="number">1</span>) == <span class="string">'I'</span>)) &#123;</span><br><span class="line">					romanInt -= <span class="number">1</span> * <span class="number">2</span>;</span><br><span class="line">				&#125; <span class="keyword">else</span> <span class="keyword">if</span> (((s.charAt(i) == <span class="string">'L'</span>) || (s.charAt(i) == <span class="string">'C'</span>)) &amp;&amp; (s.charAt(i - <span class="number">1</span>) == <span class="string">'X'</span>)) &#123;</span><br><span class="line">					romanInt -= <span class="number">10</span> * <span class="number">2</span>;</span><br><span class="line">				&#125; <span class="keyword">else</span> <span class="keyword">if</span> (((s.charAt(i) == <span class="string">'D'</span>) || (s.charAt(i) == <span class="string">'M'</span>)) &amp;&amp; (s.charAt(i - <span class="number">1</span>) == <span class="string">'C'</span>)) &#123;</span><br><span class="line">					romanInt -= <span class="number">100</span> * <span class="number">2</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> romanInt;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
